@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Валюта конвертері</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>💱 Валюта конвертері</h1>
+        <p>Валютаны тез және оңай айырбастаңыз</p>
+
+        <div class="converter">
+
+            <div class="input-box">
+                <label>Сома</label>
+                <input type="number" id="amount" value="100">
+            </div>
+
+            <div class="select-row">
+
+                <div>
+                    <label>Бастапқы валюта</label>
+                    <select id="fromCurrency">
+                        <option value="KZT">🇰🇿 KZT — Теңге</option>
+                        <option value="USD">🇺🇸 USD — Доллар</option>
+                        <option value="EUR">🇪🇺 EUR — Еуро</option>
+                        <option value="RUB">🇷🇺 RUB — Рубль</option>
+                    </select>
+                </div>
+
+                <button id="swap">⇄</button>
+
+                <div>
+                    <label>Айналдыру</label>
+                    <select id="toCurrency">
+                        <option value="USD">🇺🇸 USD — Доллар</option>
+                        <option value="KZT">🇰🇿 KZT — Теңге</option>
+                        <option value="EUR">🇪🇺 EUR — Еуро</option>
+                        <option value="RUB">🇷🇺 RUB — Рубль</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <button id="convert">Конвертация жасау</button>
+
+            <div class="result">
+                <span>Нәтиже:</span>
+                <h2 id="result">0 USD</h2>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
